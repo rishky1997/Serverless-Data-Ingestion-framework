@@ -29,3 +29,15 @@ d2 = d2.withColumn('DAY', df_split.getItem(2))
 d2=d2.na.fill(0)
 d2.write.parquet("s3://project-24/clean",,mode="overwrite")
 
+
+#creates logs
+import datetime
+from pyspark.sql.functions import concat
+app_id=spark.sparkContext.applicationId
+current_dt=datetime.datetime.now()
+x=current_dt.strftime("%Y-%m-%d %H:%M:%S  ")
+data=[x,app_id]
+col=['Date','Application_ID']
+logs = spark.createDataFrame([data],['Application id',"datetime"])
+logs=logs.select(concat(*logs.columns).alias('data'))
+logs.write.format("text").option("header", "false").mode("append").save("s3://my-emr-logs-project24/sparklogs/")
