@@ -20,7 +20,7 @@ For Automation using Glue:
 5.	IAM
 6.	SNS
 7.	Amazon Athena
-Architecture Diagram for Glue:
+Architecture Diagram for Glue:![](https://github.com/ApurvaW18/project-image/blob/main/glue.jpeg)
 
 For Automation using CloudFormation:
 1.	CloudFormation
@@ -30,7 +30,7 @@ For Automation using CloudFormation:
 5.	IAM
 6.	EMR
 7.	SNS	
-Architecture Diagram for CFT:
+Architecture Diagram for CFT:![](https://github.com/ApurvaW18/project-image/blob/main/cft.jpeg)
 
 
 
