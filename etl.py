@@ -27,4 +27,5 @@ d2 = d2.withColumn('DAY', df_split.getItem(2))
 
 #fill zero
 d2=d2.na.fill(0)
-d2.write.parquet("s3://project-24/clean")
+d2.write.parquet("s3://project-24/clean",,mode="overwrite")
+
