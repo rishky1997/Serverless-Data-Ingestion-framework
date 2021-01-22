@@ -1,8 +1,13 @@
 # Serverless-Data-Ingestion-framework
+
 Using aws services solving big data problem
+
 Group No: 24
+
 Domain: Bigdata
+
 Problem statement: Creating an Automated Serverless Data Ingestion System.
+
 Members name:
 1.	Apurva Waghmode
 2.	Dipendu Bendale
